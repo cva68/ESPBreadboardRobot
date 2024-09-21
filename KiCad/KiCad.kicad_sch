@@ -4,6 +4,13 @@
 
   (paper "A3")
 
+  (title_block
+    (title "ESP32 Breadboard Robot Breakout")
+    (date "2024-09-21")
+    (rev "A")
+    (company "C. Varney, A. Walker, K. Jones")
+  )
+
   (lib_symbols
     (symbol "74xx:74HC595" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -7.62 13.97 0)
@@ -1981,6 +1988,20 @@
   (junction (at 158.75 137.795) (diameter 0) (color 0 0 0 0)
     (uuid fb6e2ed7-257c-4044-85f1-465c5e1c4773)
   )
+
+  (no_connect (at 154.305 186.055) (uuid 18add6e8-1bee-4536-bb03-fe34443d05b9))
+  (no_connect (at 90.17 182.88) (uuid 1fc599f7-133e-4eca-bc9c-d627c4af53b1))
+  (no_connect (at 110.49 185.42) (uuid 32012f64-fa58-417a-acc3-aa4e17ded61a))
+  (no_connect (at 110.49 182.88) (uuid 4121e83f-0953-4c51-901c-bfaab95911da))
+  (no_connect (at 133.985 175.895) (uuid 52382f36-206b-462c-9777-37cabc0efd76))
+  (no_connect (at 133.985 180.975) (uuid 556ed18a-5b86-4f24-a47d-c7e4495b1da7))
+  (no_connect (at 90.17 180.34) (uuid 67a676c1-c31e-4f05-8f4c-4232ba7eaea6))
+  (no_connect (at 133.985 173.355) (uuid 720f1651-ffda-4da8-b23c-5b3425f7cdbd))
+  (no_connect (at 133.985 183.515) (uuid 81c4427c-9659-4153-b765-0a3bde786db4))
+  (no_connect (at 154.305 183.515) (uuid 861170ab-6900-4bb4-a792-a82a5ef17db3))
+  (no_connect (at 110.49 180.34) (uuid c704f09b-f3bb-48c2-9230-6ac22a68466d))
+  (no_connect (at 154.305 180.975) (uuid da7cdf96-a7f9-46cd-a976-557326b4b61a))
+  (no_connect (at 154.305 191.135) (uuid ddd8abd5-83c6-4d4c-85bb-a1e6f3ea15e4))
 
   (wire (pts (xy 171.45 78.74) (xy 171.45 74.295))
     (stroke (width 0) (type default))
