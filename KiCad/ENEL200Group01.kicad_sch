@@ -1784,6 +1784,9 @@
   (junction (at 32.385 135.89) (diameter 0) (color 0 0 0 0)
     (uuid 3fd4c083-1ffd-4a5f-880a-b9f3efbed6e9)
   )
+  (junction (at 144.145 163.195) (diameter 0) (color 0 0 0 0)
+    (uuid 4409b3b0-937d-4b43-a746-cf3f5fab763a)
+  )
   (junction (at 152.4 40.64) (diameter 0) (color 0 0 0 0)
     (uuid 44264986-dfee-44e7-865c-8d1922b443ee)
   )
@@ -1825,6 +1828,9 @@
   )
   (junction (at 146.685 104.775) (diameter 0) (color 0 0 0 0)
     (uuid 64a8fa5c-5049-4621-8250-3d5f8c3531d0)
+  )
+  (junction (at 100.33 158.75) (diameter 0) (color 0 0 0 0)
+    (uuid 65deabd5-d9c5-4893-81ef-4e16a7ae3b3c)
   )
   (junction (at 387.35 30.48) (diameter 0) (color 0 0 0 0)
     (uuid 695113d8-1fe2-428e-977c-3c5697836be2)
@@ -2076,6 +2082,10 @@
     (stroke (width 0) (type default))
     (uuid 0bacb6c6-baa4-48bf-8baf-4b394f2270c6)
   )
+  (wire (pts (xy 100.33 156.845) (xy 100.33 158.75))
+    (stroke (width 0) (type default))
+    (uuid 0c7c5b65-eccc-46e3-bc37-dcece127170f)
+  )
   (wire (pts (xy 38.735 32.385) (xy 42.545 32.385))
     (stroke (width 0) (type default))
     (uuid 0cdb21bf-2dfd-4fcc-982e-657f852ee229)
@@ -2111,6 +2121,10 @@
   (wire (pts (xy 146.685 115.57) (xy 158.75 115.57))
     (stroke (width 0) (type default))
     (uuid 1524f4d4-2185-41bc-ba08-666604c5b018)
+  )
+  (wire (pts (xy 144.145 158.115) (xy 144.145 163.195))
+    (stroke (width 0) (type default))
+    (uuid 1590a1b8-008d-4af0-ba61-0a5f08fe4dd4)
   )
   (wire (pts (xy 189.23 107.95) (xy 189.23 119.38))
     (stroke (width 0) (type default))
@@ -2212,6 +2226,10 @@
     (stroke (width 0) (type default))
     (uuid 24dd8582-45de-4498-a839-f763163fdd3d)
   )
+  (wire (pts (xy 100.33 158.75) (xy 100.33 162.56))
+    (stroke (width 0) (type default))
+    (uuid 252a9ef7-7915-467e-91be-d18c421b5b0f)
+  )
   (wire (pts (xy 194.945 74.295) (xy 192.405 74.295))
     (stroke (width 0) (type default))
     (uuid 263844bf-fbb9-4c9e-8718-271b058557e3)
@@ -2304,6 +2322,10 @@
     (stroke (width 0) (type default))
     (uuid 369d4324-906e-450f-9174-9cd7eca83dab)
   )
+  (wire (pts (xy 112.395 158.75) (xy 112.395 156.21))
+    (stroke (width 0) (type default))
+    (uuid 36aaefa6-92cd-4c93-be59-c504f33c7ef0)
+  )
   (wire (pts (xy 391.16 93.98) (xy 400.05 93.98))
     (stroke (width 0) (type default))
     (uuid 385b611b-25a7-45af-9e34-9087bb61839f)
@@ -2343,6 +2365,10 @@
   (wire (pts (xy 49.53 63.5) (xy 49.53 67.31))
     (stroke (width 0) (type default))
     (uuid 3d8df488-50aa-461c-9ef5-a7a707aebd81)
+  )
+  (wire (pts (xy 128.905 158.115) (xy 144.145 158.115))
+    (stroke (width 0) (type default))
+    (uuid 407f32e3-33ee-45f8-ad00-f8686601d5cc)
   )
   (wire (pts (xy 42.545 32.385) (xy 42.545 27.305))
     (stroke (width 0) (type default))
@@ -2707,6 +2733,10 @@
   (wire (pts (xy 170.815 127) (xy 182.88 127))
     (stroke (width 0) (type default))
     (uuid a7b06898-4869-4b59-911c-dea8b21f7b03)
+  )
+  (wire (pts (xy 100.33 158.75) (xy 112.395 158.75))
+    (stroke (width 0) (type default))
+    (uuid a8037d3c-3a95-4def-916d-e7480c7b5dc9)
   )
   (wire (pts (xy 182.88 97.155) (xy 189.23 97.155))
     (stroke (width 0) (type default))
@@ -3578,7 +3608,7 @@
     (pin "5" (uuid b3be41e3-2b39-4539-b7c8-0d56e3f2a353))
     (pin "6" (uuid fa6b69e0-ead8-4d2e-b8d8-f104dd50e4e5))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "U3") (unit 1)
         )
@@ -3618,7 +3648,7 @@
     (pin "14" (uuid 8f77d349-031e-4122-b97b-31bfb6b5293d))
     (pin "15" (uuid c1d23c2e-b8b6-4b98-810c-7bf922ea64aa))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "U5") (unit 1)
         )
@@ -3643,7 +3673,7 @@
     )
     (pin "1" (uuid d57309e5-1f29-4782-818f-200db8bcfa05))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR038") (unit 1)
         )
@@ -3668,7 +3698,7 @@
     )
     (pin "1" (uuid e6ed8704-d67b-4e8d-b1d1-5cdbac8f71b1))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR034") (unit 1)
         )
@@ -3693,7 +3723,7 @@
     )
     (pin "1" (uuid 79f65c90-4afc-406a-be52-2dd289558864))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR024") (unit 1)
         )
@@ -3719,7 +3749,7 @@
     (pin "2" (uuid 041999da-382c-4f20-9be3-a01ba09aedd0))
     (pin "1" (uuid 747f6be4-1d68-4f54-9dc1-82ac56c27aa7))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D3") (unit 1)
         )
@@ -3744,7 +3774,7 @@
     )
     (pin "1" (uuid 50fbffe3-2cd4-4a0d-b3fe-49bca6803ccc))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR047") (unit 1)
         )
@@ -3769,7 +3799,7 @@
     )
     (pin "1" (uuid f5d9f69a-f4bb-46d6-959b-341dbbb32dad))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR014") (unit 1)
         )
@@ -3795,7 +3825,7 @@
     (pin "1" (uuid 232e3453-4169-410d-8b9a-6f3da0d1c302))
     (pin "2" (uuid 206c63e3-169c-429c-b2e0-f59a8b2e9b02))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R6") (unit 1)
         )
@@ -3820,7 +3850,7 @@
     )
     (pin "1" (uuid 5488031c-4da0-4a3f-834e-1d0288b22093))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR026") (unit 1)
         )
@@ -3846,7 +3876,7 @@
     (pin "2" (uuid 2f847b94-73e6-40b2-a79a-0c0d176bcb17))
     (pin "1" (uuid b16d0739-eec8-40b1-9496-a738d56fb588))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D28") (unit 1)
         )
@@ -3871,7 +3901,7 @@
     )
     (pin "1" (uuid a218bbaa-818e-4428-a5cb-bed84f993e81))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR022") (unit 1)
         )
@@ -3897,7 +3927,7 @@
     (pin "1" (uuid 873164a3-4242-43b4-a867-7dd3453084eb))
     (pin "2" (uuid c484fea2-8163-4487-87d9-9b725f753600))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J9") (unit 1)
         )
@@ -3922,7 +3952,7 @@
     )
     (pin "1" (uuid 629d9408-964e-4c74-a595-19f37384970d))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR042") (unit 1)
         )
@@ -3947,7 +3977,7 @@
     )
     (pin "1" (uuid ba900df5-8c9a-4ee5-ac14-27ba3ae82440))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR039") (unit 1)
         )
@@ -3972,7 +4002,7 @@
     )
     (pin "1" (uuid 2ed48da3-c1c1-490e-b370-ba7a565172a5))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR043") (unit 1)
         )
@@ -3998,7 +4028,7 @@
     (pin "2" (uuid 4b02bd8e-29cb-447a-853f-08d1a9677daa))
     (pin "1" (uuid 174bf4a4-03af-4dc6-af51-757e881f4157))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D16") (unit 1)
         )
@@ -4024,7 +4054,7 @@
     (pin "1" (uuid 010cd152-d5bb-4308-96e9-f4a13a3705d9))
     (pin "2" (uuid 4e360ffc-be12-4cf3-8580-9c0951131522))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C5") (unit 1)
         )
@@ -4050,7 +4080,7 @@
     (pin "2" (uuid f997e312-6dc9-4c1a-aa52-240112b9d247))
     (pin "1" (uuid 91897a04-643c-489c-9ec9-48196f24a7dc))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C1") (unit 1)
         )
@@ -4076,7 +4106,7 @@
     (pin "2" (uuid 4e8c3a6d-a5d2-44be-a0e3-b0b4143a7b92))
     (pin "1" (uuid 609d4233-b2ab-4d6e-9c96-5398a49d72f6))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "SW3") (unit 1)
         )
@@ -4116,7 +4146,7 @@
     (pin "14" (uuid 0a77105d-9edc-47b9-8358-c24fdcb2ccbf))
     (pin "15" (uuid 269c7176-7dce-47f9-a864-239f37d38796))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "U4") (unit 1)
         )
@@ -4141,7 +4171,7 @@
     )
     (pin "1" (uuid 2f5660b6-a37d-47c4-9ae4-4aaf26b60fa2))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#FLG01") (unit 1)
         )
@@ -4167,7 +4197,7 @@
     (pin "2" (uuid f756bec7-c8cb-4148-9a67-0736f3968f66))
     (pin "1" (uuid f2b70e3b-44fa-47be-82b6-456f90d57c85))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D14") (unit 1)
         )
@@ -4192,7 +4222,7 @@
     )
     (pin "1" (uuid 72aa81e7-b90d-4bbf-9b35-7abc132d516a))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR057") (unit 1)
         )
@@ -4217,7 +4247,7 @@
     )
     (pin "1" (uuid 3701e6ac-aef1-438f-9c10-19b606e6c529))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR045") (unit 1)
         )
@@ -4242,7 +4272,7 @@
     )
     (pin "1" (uuid bf782977-3b44-4b53-813f-887c83777f78))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR08") (unit 1)
         )
@@ -4267,7 +4297,7 @@
     )
     (pin "1" (uuid ff313871-799e-4429-8045-04f753edd40d))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR05") (unit 1)
         )
@@ -4293,7 +4323,7 @@
     (pin "2" (uuid df9fc212-63bc-4ae1-ad3d-966221259469))
     (pin "1" (uuid 657cdce6-1bab-42da-ac2a-094cf5d76968))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D21") (unit 1)
         )
@@ -4318,7 +4348,7 @@
     )
     (pin "1" (uuid 191cd6a8-a7a5-424b-88ff-5d38ee03d76b))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#FLG04") (unit 1)
         )
@@ -4344,7 +4374,7 @@
     (pin "1" (uuid 0902f0a7-d9db-49ba-8824-9c2e9e72b176))
     (pin "2" (uuid 4069334f-bddf-408f-99c0-25120e256c03))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R3") (unit 1)
         )
@@ -4369,7 +4399,7 @@
     )
     (pin "1" (uuid 30769514-99df-465e-a18e-68947e9b0d6c))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR055") (unit 1)
         )
@@ -4395,7 +4425,7 @@
     (pin "1" (uuid 4fcf3c09-09df-4351-adc1-354fc580d0f6))
     (pin "2" (uuid 4b1dfdf6-ab54-4f29-a0a6-c3c38b635473))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C2") (unit 1)
         )
@@ -4421,7 +4451,7 @@
     (pin "2" (uuid dade734b-72c5-4b26-b220-d615cf1ca1d0))
     (pin "1" (uuid 32cc1301-512b-458e-bbe3-626296c0c90e))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J12") (unit 1)
         )
@@ -4429,24 +4459,24 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 100.33 162.56 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 100.33 156.845 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 47c43717-bb42-4589-bd17-2343a579a1c7)
-    (property "Reference" "#PWR036" (at 100.33 166.37 0)
+    (property "Reference" "#PWR036" (at 100.33 160.655 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 100.33 158.115 0)
+    (property "Value" "+3V3" (at 100.33 152.4 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 100.33 162.56 0)
+    (property "Footprint" "" (at 100.33 156.845 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 100.33 162.56 0)
+    (property "Datasheet" "" (at 100.33 156.845 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a954ef7f-223d-4f57-a545-46759f49dd63))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR036") (unit 1)
         )
@@ -4471,7 +4501,7 @@
     )
     (pin "1" (uuid c0a29129-b3ad-4f22-a909-b4c816ae2d55))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR018") (unit 1)
         )
@@ -4497,7 +4527,7 @@
     (pin "1" (uuid 690d9d44-cbdc-467b-a6c4-ec90bbfe4a67))
     (pin "2" (uuid 9ee8d592-afb0-4b41-b4ac-08ae5039291c))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J2") (unit 1)
         )
@@ -4523,7 +4553,7 @@
     (pin "2" (uuid ad1b1553-b8f0-45b0-aebb-b79fbe7abb0d))
     (pin "1" (uuid fb748ead-5eaa-4d70-956d-890b37578441))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J13") (unit 1)
         )
@@ -4549,7 +4579,7 @@
     (pin "2" (uuid 9e1458fa-9e8a-4df1-b90f-7b35b7dc915a))
     (pin "1" (uuid 3bb252aa-3f86-4c21-b419-0c27e3777a53))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D12") (unit 1)
         )
@@ -4575,7 +4605,7 @@
     (pin "2" (uuid 9941d9cf-a494-4539-87d7-95be8be46050))
     (pin "1" (uuid c25dbe33-ca4a-4ff1-b74f-5b2bae70c2bf))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D4") (unit 1)
         )
@@ -4600,7 +4630,7 @@
     )
     (pin "1" (uuid 3bb5d992-334e-438c-be53-913c8127d5fc))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR058") (unit 1)
         )
@@ -4626,7 +4656,7 @@
     (pin "1" (uuid ae437e92-01c2-4f7d-a0c4-9265e8868b50))
     (pin "2" (uuid c8e33538-be86-4c66-b0ed-92b489e1d6df))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J3") (unit 1)
         )
@@ -4653,7 +4683,7 @@
     (pin "1" (uuid 12f7b7d1-1bd7-4098-b96c-d63ee5f33970))
     (pin "3" (uuid 7eceda37-2276-422b-b4be-e9622c7c194a))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "Q1") (unit 1)
         )
@@ -4678,9 +4708,34 @@
     )
     (pin "1" (uuid b7d050ac-8458-403c-bbe6-28eb50965832))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR017") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 112.395 163.83 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 55d14129-9dc9-458c-bba2-bd1cdc50a214)
+    (property "Reference" "#PWR049" (at 112.395 170.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 112.395 168.91 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 112.395 163.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 112.395 163.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c8217e0b-df48-4641-ba13-d66c674a1b41))
+    (instances
+      (project "ENEL200Group01"
+        (path "/75846857-beef-481b-a10f-631710449222"
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -4703,7 +4758,7 @@
     )
     (pin "1" (uuid 0fb892f4-09df-4407-a3f6-dc88280117c8))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR03") (unit 1)
         )
@@ -4729,7 +4784,7 @@
     (pin "1" (uuid ab1ad82f-c9a4-4650-b892-fa256187cf67))
     (pin "2" (uuid 26689488-c8a6-480f-b9dd-644829a6f433))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C3") (unit 1)
         )
@@ -4754,7 +4809,7 @@
     )
     (pin "1" (uuid 6997b373-ce5d-4ccf-9b15-03a497a6a3fc))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR048") (unit 1)
         )
@@ -4779,7 +4834,7 @@
     )
     (pin "1" (uuid 9b523d7d-e34b-490a-8d5b-2f7b939d4063))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR01") (unit 1)
         )
@@ -4805,7 +4860,7 @@
     (pin "1" (uuid baac38ed-e9fd-4d9e-a057-d6c3bd8660fc))
     (pin "2" (uuid 6cb6b6b4-557e-4a35-ab00-ee221f2d2280))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C8") (unit 1)
         )
@@ -4830,7 +4885,7 @@
     )
     (pin "1" (uuid 5dc0e6ae-a255-47d6-a83b-83d4e456f764))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#FLG03") (unit 1)
         )
@@ -4856,7 +4911,7 @@
     (pin "2" (uuid b61bff93-f824-495a-b499-e6ac62775195))
     (pin "1" (uuid 28302ad8-d1d0-4a4c-adb8-a2d8081c5683))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D27") (unit 1)
         )
@@ -4882,7 +4937,7 @@
     (pin "2" (uuid 7f5d939d-b962-426b-89ec-007514820135))
     (pin "1" (uuid 449167af-65e2-4c10-82ee-3556ca72702d))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D1") (unit 1)
         )
@@ -4908,7 +4963,7 @@
     (pin "2" (uuid 95d51a15-3f5c-4019-bd80-cc84b7b1e7f7))
     (pin "1" (uuid 79dfce03-8b0f-431f-bdca-5f1cc755fba9))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D29") (unit 1)
         )
@@ -4947,7 +5002,7 @@
     (pin "7" (uuid c50435fa-6d4f-4f63-b1f5-bba01245f79a))
     (pin "5" (uuid 89653ad2-6d51-4a0b-b5cd-6997f957accf))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J14") (unit 1)
         )
@@ -4973,7 +5028,7 @@
     (pin "1" (uuid 52b65761-f068-4ccc-af52-189597df1874))
     (pin "2" (uuid 3c072b7f-7d84-4e0b-88c2-f4de93f74a85))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R7") (unit 1)
         )
@@ -4999,7 +5054,7 @@
     (pin "1" (uuid 07f4affd-3132-40c5-a9c4-aea3169de57e))
     (pin "2" (uuid 44a26f54-15e7-45ec-a513-b3eea446c9ea))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R16") (unit 1)
         )
@@ -5024,7 +5079,7 @@
     )
     (pin "1" (uuid 3c2e1cb1-8817-4663-93f2-1ae89a025bf8))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR028") (unit 1)
         )
@@ -5050,7 +5105,7 @@
     (pin "2" (uuid d0439ab1-1b71-4311-ae55-8bda109b4048))
     (pin "1" (uuid 1b2cf1ef-0b63-4796-a46e-d7432c5c26b1))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D8") (unit 1)
         )
@@ -5076,7 +5131,7 @@
     (pin "2" (uuid 3719f978-64f3-4e6f-836e-06d34320ecb9))
     (pin "1" (uuid 68b40220-0965-4854-828e-e9ae455d59f9))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R2") (unit 1)
         )
@@ -5108,7 +5163,7 @@
     (pin "5" (uuid 3c4b049d-c053-47e2-b404-71b7e8b12953))
     (pin "6" (uuid acb733a9-b651-43ad-a3f1-87943347303e))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "U2") (unit 1)
         )
@@ -5135,7 +5190,7 @@
     (pin "1" (uuid 53a7563e-3aee-4d28-9a88-401653cf5e1d))
     (pin "3" (uuid 24229892-ffac-40df-ba70-422485f29030))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "Q5") (unit 1)
         )
@@ -5160,7 +5215,7 @@
     )
     (pin "1" (uuid 8814c26b-3a16-4485-984d-1dd1ef6a744d))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR040") (unit 1)
         )
@@ -5186,7 +5241,7 @@
     (pin "2" (uuid ee58ead6-b0bb-4461-be66-eadf3cc500c2))
     (pin "1" (uuid e6c874fc-6225-4c67-a10e-51f829110391))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D7") (unit 1)
         )
@@ -5212,7 +5267,7 @@
     (pin "1" (uuid 65fd42d8-e0fd-45ce-96ea-3e41e9bdd98e))
     (pin "2" (uuid 1ccf8ed7-0aec-4594-9c0f-1cc1dfbc46e6))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J5") (unit 1)
         )
@@ -5237,7 +5292,7 @@
     )
     (pin "1" (uuid 455887cc-877d-4155-aeff-f104a4fbdfa8))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR07") (unit 1)
         )
@@ -5263,7 +5318,7 @@
     (pin "2" (uuid 0de819e8-57a8-478a-b246-a9a9e0d56024))
     (pin "1" (uuid 91167990-86d5-4b12-b09b-36acff18a88a))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R1") (unit 1)
         )
@@ -5288,7 +5343,7 @@
     )
     (pin "1" (uuid d32ff1a5-b0d6-4a1d-aa4c-95b400c15ff0))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR031") (unit 1)
         )
@@ -5314,7 +5369,7 @@
     (pin "2" (uuid 8799d066-3a51-4dd2-b5d7-210abc8f4f3a))
     (pin "1" (uuid 61f3f30a-b668-4520-b824-8208371f2d01))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D9") (unit 1)
         )
@@ -5341,7 +5396,7 @@
     (pin "2" (uuid b29295e3-7a70-4d5e-b985-e6faec679ef7))
     (pin "1" (uuid 861eeceb-630a-4f82-8bf5-7250cf755c7c))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J1") (unit 1)
         )
@@ -5380,7 +5435,7 @@
     (pin "14" (uuid 5b7f08b5-8e1d-424f-9409-d5231ad542df))
     (pin "4" (uuid 30eadfb5-69a2-4acf-979d-874aa6d3fcd3))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J7") (unit 1)
         )
@@ -5405,7 +5460,7 @@
     )
     (pin "1" (uuid e6950351-ea21-473c-b9b5-3643587ddf7b))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR044") (unit 1)
         )
@@ -5430,7 +5485,7 @@
     )
     (pin "1" (uuid 08d9bfc3-6cee-4924-8b51-e29e1080ade1))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR054") (unit 1)
         )
@@ -5455,7 +5510,7 @@
     )
     (pin "1" (uuid 902bc9c8-1727-460b-94d8-adad0979f70a))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR016") (unit 1)
         )
@@ -5481,7 +5536,7 @@
     (pin "2" (uuid f3f5a7c9-e742-48c5-ba90-b8ec4f9a219f))
     (pin "1" (uuid 7644159f-698f-4bc9-b702-5820fe4c8d48))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D13") (unit 1)
         )
@@ -5506,7 +5561,7 @@
     )
     (pin "1" (uuid fb7071af-3458-45ad-834e-09fc59c692aa))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR056") (unit 1)
         )
@@ -5532,7 +5587,7 @@
     (pin "1" (uuid 80542b2b-3067-4959-a15f-759e0a41b970))
     (pin "2" (uuid c90a9075-1d55-4992-843f-c98f9c63cfd6))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R4") (unit 1)
         )
@@ -5557,7 +5612,7 @@
     )
     (pin "1" (uuid f382e4aa-ffe1-4840-a4a8-e09d298c5d0c))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR032") (unit 1)
         )
@@ -5583,7 +5638,7 @@
     (pin "2" (uuid 7442bb7f-4c7c-4811-948e-2bfa9c039bb4))
     (pin "1" (uuid 64e2f106-3f2e-4399-9012-23106842552b))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D6") (unit 1)
         )
@@ -5609,7 +5664,7 @@
     (pin "2" (uuid 5bf5bb5c-3368-4809-a39e-892a043513f6))
     (pin "1" (uuid 20e04ae4-301d-44ae-8696-2eb531fb8031))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D17") (unit 1)
         )
@@ -5634,7 +5689,7 @@
     )
     (pin "1" (uuid c9b80b81-58e7-4e64-b9a1-cb0da57799fc))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR010") (unit 1)
         )
@@ -5660,7 +5715,7 @@
     (pin "2" (uuid 35af8f20-b464-46a4-895f-1918a658d313))
     (pin "1" (uuid 66e904a7-1091-4e55-9a91-b5cab19c2f22))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R12") (unit 1)
         )
@@ -5687,7 +5742,7 @@
     (pin "1" (uuid be07d276-116b-43a1-a011-1c19fd3aaf10))
     (pin "3" (uuid c6fdb066-d21b-4b31-ac21-76f095c79be1))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "Q3") (unit 1)
         )
@@ -5713,7 +5768,7 @@
     (pin "2" (uuid 93cd3b9b-7ad6-4d56-b7d0-9c5c23189da8))
     (pin "1" (uuid a5e1ec0f-2a8a-4110-8357-5518252439b7))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D26") (unit 1)
         )
@@ -5738,7 +5793,7 @@
     )
     (pin "1" (uuid b9134ea1-ecff-4ec9-9577-c69f7ecbac0e))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR06") (unit 1)
         )
@@ -5764,7 +5819,7 @@
     (pin "2" (uuid 2e073b85-4fa4-4864-8ee1-b50d44ca3f2c))
     (pin "1" (uuid 67ff87d4-56cf-453a-af0d-bd8a724697dd))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D19") (unit 1)
         )
@@ -5789,7 +5844,7 @@
     )
     (pin "1" (uuid 3dff3928-b4a6-4b7a-820e-795056b86264))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR037") (unit 1)
         )
@@ -5815,7 +5870,7 @@
     (pin "1" (uuid 1a7017ec-d1d7-4898-ba8f-f46c09a1e5ed))
     (pin "2" (uuid 09c4d434-b809-4472-a63b-9113601053b2))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C12") (unit 1)
         )
@@ -5840,7 +5895,7 @@
     )
     (pin "1" (uuid 039e3029-eb3e-4c6b-bf72-64abd076618c))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR029") (unit 1)
         )
@@ -5866,7 +5921,7 @@
     (pin "1" (uuid bd152748-d01d-4cee-aae7-969e69f13042))
     (pin "2" (uuid 1b930f22-97fb-48d3-ac3f-f1882261a342))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R15") (unit 1)
         )
@@ -5892,7 +5947,7 @@
     (pin "1" (uuid 095285b9-0ff0-4117-bd26-1b25dbaf1b91))
     (pin "2" (uuid 55e3a4e1-19d6-4503-9d7b-5108a1fc2e12))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C6") (unit 1)
         )
@@ -5918,7 +5973,7 @@
     (pin "2" (uuid c7b75923-0098-40bf-86b0-d61e98bf6061))
     (pin "1" (uuid c3750a9c-b0c7-4c26-bc7d-c050b585f920))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R18") (unit 1)
         )
@@ -5944,7 +5999,7 @@
     (pin "2" (uuid 872a850b-b9db-45cf-8ed7-16f11cb2bb6e))
     (pin "1" (uuid 837de898-7204-48fc-9471-1684596968ab))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D24") (unit 1)
         )
@@ -5970,7 +6025,7 @@
     (pin "1" (uuid d8a8de3d-3ff9-4e69-8a89-670986ff4ac3))
     (pin "2" (uuid 0c8e1505-bcfb-486e-870f-993a6255d596))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R8") (unit 1)
         )
@@ -5996,7 +6051,7 @@
     (pin "2" (uuid 8a8247fe-f1cd-4cf7-a16e-ea92dddd9012))
     (pin "1" (uuid c0acca8c-aef0-44ed-9260-e0336bab4427))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D25") (unit 1)
         )
@@ -6050,7 +6105,7 @@
     (pin "2" (uuid 7b51143a-ab1a-4201-8da3-91c210288014))
     (pin "1" (uuid c8f3a9f8-e7ec-4f9d-9211-ef217d50d8aa))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "U1") (unit 1)
         )
@@ -6075,7 +6130,7 @@
     )
     (pin "1" (uuid 6c4ff8b4-e32b-490c-89a2-5ab5f471ea8b))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR027") (unit 1)
         )
@@ -6101,7 +6156,7 @@
     (pin "2" (uuid 2e5ee46e-68eb-4344-9613-95ca1735ac2d))
     (pin "1" (uuid d3c2337b-8435-4914-b5f7-ef61816d5c0a))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D10") (unit 1)
         )
@@ -6127,7 +6182,7 @@
     (pin "2" (uuid 42ea33e8-b97e-48e1-accb-0a1e55c7e429))
     (pin "1" (uuid bbf8124d-eafc-438b-a94b-abf75f0f45a2))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R13") (unit 1)
         )
@@ -6154,7 +6209,7 @@
     (pin "1" (uuid 2ba08039-679e-49ec-a9a2-ec6a7cd40f35))
     (pin "3" (uuid 25144bd2-71a5-4b41-8818-6cf29b8aa626))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "Q4") (unit 1)
         )
@@ -6179,7 +6234,7 @@
     )
     (pin "1" (uuid bd4e99e4-af51-4441-ac1f-190ef820fa34))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR053") (unit 1)
         )
@@ -6204,7 +6259,7 @@
     )
     (pin "1" (uuid bfc0b74b-9246-45d0-aa7b-fc62d49420c6))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR011") (unit 1)
         )
@@ -6230,7 +6285,7 @@
     (pin "2" (uuid d35a24a2-4f47-4fc5-8405-c100ccd696e7))
     (pin "1" (uuid 72537fd2-a696-4185-9433-88d307c19f36))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D15") (unit 1)
         )
@@ -6255,7 +6310,7 @@
     )
     (pin "1" (uuid 60275656-7bd6-4446-a139-d7553c055e78))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR09") (unit 1)
         )
@@ -6281,7 +6336,7 @@
     (pin "2" (uuid f8bb4ea8-463e-4c56-8ee1-5ba903958cd3))
     (pin "1" (uuid 98a254bb-bf4e-48ef-9464-0ebf6504aa24))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C10") (unit 1)
         )
@@ -6306,7 +6361,7 @@
     )
     (pin "1" (uuid 5c0c8800-d42d-4546-a858-38212b4d4101))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR035") (unit 1)
         )
@@ -6332,7 +6387,7 @@
     (pin "1" (uuid 397c71df-6694-4c9b-8161-8042962397a9))
     (pin "2" (uuid 97904cdb-14e4-4a74-9f00-00c543f99a81))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R5") (unit 1)
         )
@@ -6357,7 +6412,7 @@
     )
     (pin "1" (uuid 8366dc59-3a41-45d4-8afa-c45b457d6976))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR025") (unit 1)
         )
@@ -6383,9 +6438,34 @@
     (pin "2" (uuid a70b0e0f-0cae-405e-85ba-b39a137dcdfb))
     (pin "1" (uuid 4fa21eab-c105-4553-ac49-7903dc75e5e8))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 128.905 165.735 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid be6e156c-ce38-4f53-8d64-d90b1fd9a958)
+    (property "Reference" "#PWR050" (at 128.905 172.085 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 128.905 170.815 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 128.905 165.735 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 128.905 165.735 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2a07df0d-a9a7-473f-a547-63ac9548b937))
+    (instances
+      (project "ENEL200Group01"
+        (path "/75846857-beef-481b-a10f-631710449222"
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -6409,7 +6489,7 @@
     (pin "1" (uuid 521425fc-98ca-48a5-966b-dd86ee4f4ff2))
     (pin "2" (uuid e9f0a9aa-65ef-425f-91fa-18e43f18ba7e))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R9") (unit 1)
         )
@@ -6434,7 +6514,7 @@
     )
     (pin "1" (uuid ea74158b-dfc0-41f3-b4a0-783e6184089d))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR041") (unit 1)
         )
@@ -6460,7 +6540,7 @@
     (pin "2" (uuid f80e7539-8cf7-4fbf-a08a-d3465b731e09))
     (pin "1" (uuid 2301992a-543f-4501-a0dd-c7f5e1658031))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R11") (unit 1)
         )
@@ -6485,7 +6565,7 @@
     )
     (pin "1" (uuid f451a42b-7015-49e3-a349-3aec8c92455d))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR023") (unit 1)
         )
@@ -6510,7 +6590,7 @@
     )
     (pin "1" (uuid 884adf87-3b21-4f6d-abc3-6c2d2b5de9b0))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR019") (unit 1)
         )
@@ -6536,7 +6616,7 @@
     (pin "2" (uuid 7ff69f72-6734-4ffa-aee6-9eea72faf0f5))
     (pin "1" (uuid 92ac16b4-e72d-4086-8ebb-720221b7129a))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D23") (unit 1)
         )
@@ -6562,7 +6642,7 @@
     (pin "1" (uuid 9572f897-cf94-48c0-b738-ef9935354513))
     (pin "2" (uuid 08453ac2-0eac-40bc-b762-478c6dbc8d1d))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J8") (unit 1)
         )
@@ -6588,7 +6668,7 @@
     (pin "1" (uuid 8176b2cd-6a36-4b72-ae5e-526e349347c1))
     (pin "2" (uuid 4f3b2d4c-a1f5-46db-9e4d-2ad4a5387458))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R17") (unit 1)
         )
@@ -6627,7 +6707,7 @@
     (pin "7" (uuid 77dd64a5-db9e-4ed3-b32c-eaad9269af48))
     (pin "5" (uuid 04325f88-e6be-44e4-86b5-77c9c381296c))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J15") (unit 1)
         )
@@ -6652,7 +6732,7 @@
     )
     (pin "1" (uuid a6fa1dd8-acd1-4a0e-b7e8-8b261ba789b3))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#FLG02") (unit 1)
         )
@@ -6679,7 +6759,7 @@
     (pin "1" (uuid a3aa182c-986d-4259-b85c-96101526ad30))
     (pin "3" (uuid 59304440-783f-44cf-b01c-c86c3a61207d))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "Q2") (unit 1)
         )
@@ -6705,7 +6785,7 @@
     (pin "1" (uuid 08a91dd1-151e-4c9e-825e-f6e44d0ac34f))
     (pin "2" (uuid 0e968d99-bff7-4b25-8457-6c4fab9fba8f))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C4") (unit 1)
         )
@@ -6730,7 +6810,7 @@
     )
     (pin "1" (uuid 717c71ba-0b2d-403e-be14-343819670a3b))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR015") (unit 1)
         )
@@ -6756,7 +6836,7 @@
     (pin "1" (uuid 27a47801-f25a-4a49-b5c0-f1758a972667))
     (pin "2" (uuid e4234252-d772-4bf4-9bd1-93450be5badd))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J4") (unit 1)
         )
@@ -6781,7 +6861,7 @@
     )
     (pin "1" (uuid 426b44d8-978c-4dcf-9db6-c481ae2fb997))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR013") (unit 1)
         )
@@ -6806,9 +6886,35 @@
     )
     (pin "1" (uuid ee078c32-dbc9-4efc-a8d7-6fa2d0a6cec0))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR04") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "enel200_uc_kicad7:UC_C") (at 112.395 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid dc79cfa8-1612-4314-95b7-b2630c18c7d1)
+    (property "Reference" "C13" (at 115.57 158.75 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "100nF" (at 115.57 161.29 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" (at 112.395 165.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 112.395 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6371f149-9e86-436b-8d07-2b18110b1eed))
+    (pin "2" (uuid 579173de-2cd6-435a-bf22-54eecc4e2ac8))
+    (instances
+      (project "ENEL200Group01"
+        (path "/75846857-beef-481b-a10f-631710449222"
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -6833,7 +6939,7 @@
     (pin "2" (uuid 877d03cf-f288-4eae-a1b1-85c54f510351))
     (pin "1" (uuid ed722fa3-511f-4756-a6fa-2ba24a93fcb3))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "U6") (unit 1)
         )
@@ -6858,9 +6964,35 @@
     )
     (pin "1" (uuid d243cc45-03cd-46c1-b82b-5d951c6ce144))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR046") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "enel200_uc_kicad7:UC_C") (at 128.905 161.925 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e1fa9759-f1e7-4495-932c-5c8dfe803706)
+    (property "Reference" "C11" (at 132.08 160.655 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "100nF" (at 132.08 163.195 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" (at 128.905 167.005 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 128.905 161.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0beac53e-641b-4481-88ed-ee755a415c82))
+    (pin "2" (uuid a88a851b-1d65-4a5d-9519-69d2b476bc85))
+    (instances
+      (project "ENEL200Group01"
+        (path "/75846857-beef-481b-a10f-631710449222"
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -6884,7 +7016,7 @@
     (pin "2" (uuid 7844194e-ac19-463e-9621-3cdc245f5d66))
     (pin "1" (uuid 0dc7301b-981b-4ead-95d2-fb6e0a579ffc))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D18") (unit 1)
         )
@@ -6909,7 +7041,7 @@
     )
     (pin "1" (uuid 86ad2f87-990e-4f92-85f7-eecba7c8499c))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR030") (unit 1)
         )
@@ -6934,7 +7066,7 @@
     )
     (pin "1" (uuid 0d6333a7-4b10-4fde-aa9e-7c78e7638a41))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR02") (unit 1)
         )
@@ -6960,7 +7092,7 @@
     (pin "2" (uuid d0df1576-be84-442e-9b6a-2e8ecae733d2))
     (pin "1" (uuid c510dd26-d86c-45b5-b6c7-98b3063abcc9))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C9") (unit 1)
         )
@@ -6986,7 +7118,7 @@
     (pin "2" (uuid a3815ffe-65fd-4120-9fb5-740bd44902a2))
     (pin "1" (uuid 528a9217-c1f1-48c4-847f-eb899f5acdc7))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R10") (unit 1)
         )
@@ -7012,7 +7144,7 @@
     (pin "2" (uuid f4c05dd3-8490-4b7f-aef5-1d7bda047f8d))
     (pin "1" (uuid 551e1142-03eb-4ed0-b66a-7cdf25bbaad4))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D20") (unit 1)
         )
@@ -7038,7 +7170,7 @@
     (pin "2" (uuid 61400a60-db84-413a-ad0e-07be3a928b89))
     (pin "1" (uuid 74eb2c8f-cfc9-4024-8651-00ad8890186c))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D11") (unit 1)
         )
@@ -7064,7 +7196,7 @@
     (pin "2" (uuid 04b89518-ee04-465c-b6dc-4f4ac2c83ba7))
     (pin "1" (uuid 48f6880b-fba7-4af0-8142-fd0db3de57e3))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D30") (unit 1)
         )
@@ -7090,7 +7222,7 @@
     (pin "2" (uuid 240e8e4e-6f44-422d-bc46-c792a84c49de))
     (pin "1" (uuid bcdc68c2-4953-442f-9a3b-420c053b8119))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D22") (unit 1)
         )
@@ -7116,7 +7248,7 @@
     (pin "2" (uuid 6be5a70c-44ae-4380-8673-3f23fe6a96a2))
     (pin "1" (uuid 170578ad-2168-4f9f-85d1-0e2ad542ac97))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "D5") (unit 1)
         )
@@ -7141,7 +7273,7 @@
     )
     (pin "1" (uuid 193e0575-912d-426f-9439-183bf2e4aade))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR021") (unit 1)
         )
@@ -7168,7 +7300,7 @@
     (pin "2" (uuid 093ac806-b196-4325-8b5c-b5f77b391fc1))
     (pin "3" (uuid 2cdea9bb-021c-4fd5-b328-9ff3fe60a37e))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "SW2") (unit 1)
         )
@@ -7193,7 +7325,7 @@
     )
     (pin "1" (uuid f26d3c91-1f0b-434d-9094-bfe0860c7556))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR012") (unit 1)
         )
@@ -7232,7 +7364,7 @@
     (pin "14" (uuid a371bde8-fb54-460c-8ca3-ccd485dbdc05))
     (pin "4" (uuid 7a143688-eda2-48d4-bdd3-72cebaba6a07))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "J6") (unit 1)
         )
@@ -7257,7 +7389,7 @@
     )
     (pin "1" (uuid 895c0da3-9984-4dbd-9947-79a449f0ec61))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR020") (unit 1)
         )
@@ -7282,7 +7414,7 @@
     )
     (pin "1" (uuid dce3e2bc-303d-4db9-b527-85f24de730e8))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "#PWR033") (unit 1)
         )
@@ -7308,7 +7440,7 @@
     (pin "2" (uuid 0db1c792-c459-4bde-93b1-82a6c13ab2ef))
     (pin "1" (uuid 691cb030-37aa-4d15-8392-bd3da9cf8e4b))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "R14") (unit 1)
         )
@@ -7334,7 +7466,7 @@
     (pin "1" (uuid 29a4b301-ccd7-42f6-9ae6-1f130dadd38e))
     (pin "2" (uuid 24cd0de1-2cea-4450-800d-87c6577a4374))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "C7") (unit 1)
         )
@@ -7360,7 +7492,7 @@
     (pin "2" (uuid 3c67e50c-5e18-4521-9b5d-1411bf4866f9))
     (pin "1" (uuid 32188a93-06c0-4219-85d1-03fc026f8f76))
     (instances
-      (project "KiCad"
+      (project "ENEL200Group01"
         (path "/75846857-beef-481b-a10f-631710449222"
           (reference "SW5") (unit 1)
         )
