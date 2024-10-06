@@ -7,7 +7,7 @@ mcp = mcp23017.MCP23017(i2c, 0x20)
 tmp_delay = 10 # need to make this
 
 class Led:
-    state_buffer = 0b10001_01010_00100_01010_10001
+    state_buffer = [17,10,4,10,17]
 
     def __init__(self, columns, rows):
         self.columns = columns
@@ -36,17 +36,17 @@ class Led:
 
     def update_display(self):
         """ To be called every iteration of the paced loop """
-        this_state = self.state_buffer
-        print(this_state)
-        
+        for row, states in enumerate(self.state_buffer):
+            self.clear()
+            input("cleared >")
+            for shift, col in enumerate(self.columns):
+                if ((states >> shift) & 1):
+                    print("1")
+                    mcp[col].output(0)
+                else:
+                    print("0")
+                    mcp[col].output(1)
+            mcp[self.rows[row]].output(0)
+            input(">")
 
-        for row in self.rows:
-            mcp[row].output(1)
-            for col in self.columns:
-                input(f"> row {row} col {col} -> {bin(this_state)} - > {(this_state & 1) == 0}")
-                mcp[col].output((this_state & 1) == 0)
-                this_state = this_state >> 1
-            mcp[row].output(0)
-            time.sleep(tmp_delay / 1000)
-        input(">")
-            
+
