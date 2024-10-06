@@ -14,17 +14,3 @@ mcp[9].output(1)
 mcp[10].output(1)
 mcp[11].output(1)
 mcp[12].output(1)
-
-motor_driver = md.MotorDriver()
-# Turn the right motor on with 50% speed forward
-motor_driver.motor_on(motor_driver.Motors.MOTOR2, 512, motor_driver.MotorDirection.REVERSE)
-
-# sleep(2)
-
-# # Turn the left motor on with 75% speed in reverse
-# motor_driver.motor_on('left', 768, 'reverse')
-# sleep(2)
-
-# # Turn off both motors
-# motor_driver.motor_off('right')
-# motor_driver.motor_off('left')
