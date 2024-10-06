@@ -1,6 +1,8 @@
 from machine import Pin, I2C
 import mcp23017
 import time
+import threading
+
 i2c = I2C(scl=Pin(8), sda=Pin(9))
 mcp = mcp23017.MCP23017(i2c, 0x20)
 
@@ -14,6 +16,9 @@ class Led:
         self.rows = rows
         print(self.rows)
         print(self.columns)
+
+        update_thread = threading.Thread(target = update_display)
+        update_thread.start() #I love python :)
     
     def plot(self, x, y):
         """ turns on LED on at x and y cords """
