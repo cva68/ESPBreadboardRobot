@@ -17,7 +17,7 @@ class Led:
         print(self.rows)
         print(self.columns)
 
-        update_thread = threading.Thread(target = update_display)
+        update_thread = threading.Thread(target = self.update_display)
         update_thread.start() #I love python :)
     
     def plot(self, x, y):
@@ -27,6 +27,9 @@ class Led:
     def unplot(self, x, y):
         #turns on LED on at x and y cords
         pass
+
+    def update_buffer(self, buffer):
+        self.state_buffer = buffer
 
     def toggle(self, x, y):
         #turns on LED on at x and y cords
@@ -55,3 +58,5 @@ class Led:
             input(">")
 
 
+# Columns: 8,9,13,14,15
+# Rows: 
