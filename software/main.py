@@ -1,7 +1,9 @@
 from machine import Pin, SoftI2C
 import mcp23017
-#import lib.motor_driver as md
-import lib.led as ld
+
+from lib.setup import setup
+kitronik_motor_driver, led, input, basic = setup()
+
 i2c = SoftI2C(scl=Pin(8), sda=Pin(9))
 mcp = mcp23017.MCP23017(i2c, 0x20)
 
@@ -10,13 +12,6 @@ mcp[6].output(1)
 mcp[2].output(1)
 mcp[1].output(1)
 mcp[3].output(1)
-<<<<<<< HEAD
-mcp[8].output(1)
-mcp[9].output(1)
-mcp[10].output(1)
-mcp[11].output(1)
-mcp[12].output(1)
-=======
 mcp[8].output(0)
 mcp[9].output(0)
 mcp[10].output(0)
@@ -44,4 +39,3 @@ motor_driver.motor_on(motor_driver.Motors.MOTOR2, 512, motor_driver.MotorDirecti
 # motor_driver.motor_off('right')
 # motor_driver.motor_off('left')
 """
->>>>>>> 9d7051ddd3e76f87d1c5def3870adeda85d79a28
