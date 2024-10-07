@@ -19,22 +19,22 @@ class Led:
         min_row = rows[0]
         max_row = rows[-1]
 
-        _thread.start_new_thread(update_display, ())
+        # _thread.start_new_thread(self.update_display(), ())
     
     def plot(self, x, y):
-        position = y*5 + x - 1
-        self.state_buffer = self.state_buffer | (1<<position)
+        mask = get_mask(x, y)
+        self.state_buffer |= mask
 
     def unplot(self, x, y):
-        # turns on LED on at x and y cords
-        pass
+        mask = get_mask(x, y)
+        self.state_buffer &= ~mask
 
     def update_buffer(self, buffer):
         self.state_buffer = buffer
 
     def toggle(self, x, y):
-        # turns on LED on at x and y cords
-        pass
+        mask = get_mask(x, y)
+        self.state_buffer ^= mask
 
     def clear(self):
         for col in self.rows:
@@ -55,6 +55,9 @@ class Led:
             time.sleep(1/50)
             mcp[row].output(1)
 
+def get_mask(x, y):
+    position = y*5 + x
+    return 1 << position
 
 # Columns: 8,9,13,14,15
 # Rows: 7,6,5,4,3
