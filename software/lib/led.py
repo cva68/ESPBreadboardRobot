@@ -21,18 +21,18 @@ class Led:
         update_thread.start() #I love python :)
     
     def plot(self, x, y):
-        """ turns on LED on at x and y cords """
+        # turns on LED on at x and y cords
         pass
 
     def unplot(self, x, y):
-        #turns on LED on at x and y cords
+        # turns on LED on at x and y cords
         pass
 
     def update_buffer(self, buffer):
         self.state_buffer = buffer
 
     def toggle(self, x, y):
-        #turns on LED on at x and y cords
+        # turns on LED on at x and y cords
         pass
 
     def clear(self):
