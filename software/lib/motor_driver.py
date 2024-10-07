@@ -1,11 +1,11 @@
 from machine import Pin, PWM
 from time import sleep
 
-class Motors(Enum):
+class Motors:
     MOTOR1 = 1 #right
     MOTOR2 = 2 #left
 
-class MotorDirection(Enum):
+class MotorDirection:
     FORWARD = 1
     REVERSE = 2
 
