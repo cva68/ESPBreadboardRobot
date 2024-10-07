@@ -16,14 +16,14 @@ class Basic:
         plot = plot.replace(" ", "")
         led_binary = 0
 
-        for char in plot:
+        for character in plot:
             led_binary += (character == '#')
             led_binary << 1
         
-        led.update_buffer(led_binary)
+        self.led.update_buffer(led_binary)
     
     def clear_screen(self):
-        led.clear()
+        self.led.clear()
     
     def show_arrow(self, direction):
         #takes a direction and displays a arrow in that direction on LEDs

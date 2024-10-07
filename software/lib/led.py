@@ -1,7 +1,7 @@
 from machine import Pin, SoftI2C
 import mcp23017
 import time
-import _thread
+#import _thread
 
 i2c = SoftI2C(scl=Pin(8), sda=Pin(9))
 mcp = mcp23017.MCP23017(i2c, 0x20)
@@ -9,21 +9,27 @@ mcp = mcp23017.MCP23017(i2c, 0x20)
 tmp_delay = 10 # need to make this
 
 class Led:
-    state_buffer = 0b10001_01010_00100_01010_10001
-
+    #state_buffer = 0b10001_01010_00100_01010_10001
+    
     def __init__(self, columns, rows):
         self.columns = columns
         self.rows = rows
-        min_col = columns[0]
-        max_col = columns[-1]
-        min_row = rows[0]
-        max_row = rows[-1]
+        self.state_buffer = 0
 
+<<<<<<< HEAD
         # _thread.start_new_thread(self.update_display(), ())
     
     def plot(self, x, y):
         mask = get_mask(x, y)
         self.state_buffer |= mask
+=======
+        #_thread.start_new_thread(update_display, ())
+    
+    def plot(self, x, y):
+        position = y*5 + x - 1
+        self.state_buffer = self.state_buffer | (1<<position)
+        print(bin(self.state_buffer))
+>>>>>>> 07da5c288f4b05da564c0a3fa5d274bec54da032
 
     def unplot(self, x, y):
         mask = get_mask(x, y)
