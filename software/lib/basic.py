@@ -12,10 +12,15 @@ class Basic:
 
     # takes a string of . and # the size of the LED matrix turn LED on for every # and off for every.
     def show_leds(self, plot):
-        rows = grid_str.splitlines()
-        row_binarys = tuple(int(''.join('1' if char == '#' else '0' for char in row), 2) for row in rows) #makes a tuple with each row being stored in binary
+        plot = plot.strip()
+        plot = plot.replace(" ", "")
+        led_binary = 0
 
-        led.update_buffer(row_binarys)
+        for char in plot:
+            led_binary += (character == '#')
+            led_binary << 1
+        
+        led.update_buffer(led_binary)
     
     def clear_screen(self):
         led.clear()

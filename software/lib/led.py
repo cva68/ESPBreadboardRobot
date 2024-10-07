@@ -1,7 +1,7 @@
 from machine import Pin, SoftI2C
 import mcp23017
 import time
-#import threading
+import _thread
 
 i2c = SoftI2C(scl=Pin(8), sda=Pin(9))
 mcp = mcp23017.MCP23017(i2c, 0x20)
@@ -19,12 +19,11 @@ class Led:
         min_row = rows[0]
         max_row = rows[-1]
 
-        #update_thread = threading.Thread(target = self.update_display)
-        #update_thread.start() #I love python :)
+        _thread.start_new_thread(update_display, ())
     
     def plot(self, x, y):
-        # turns on LED on at x and y cords
-        pass
+        position = y*5 + x - 1
+        self.state_buffer = self.state_buffer | (1<<position)
 
     def unplot(self, x, y):
         # turns on LED on at x and y cords
