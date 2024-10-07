@@ -1,24 +1,26 @@
-from machine import Pin, I2C
+from machine import Pin, SoftI2C
 import mcp23017
 import time
-import threading
+#import threading
 
-i2c = I2C(scl=Pin(8), sda=Pin(9))
+i2c = SoftI2C(scl=Pin(8), sda=Pin(9))
 mcp = mcp23017.MCP23017(i2c, 0x20)
 
 tmp_delay = 10 # need to make this
 
 class Led:
-    state_buffer = [17,10,4,10,17]
+    state_buffer = 0b10001_01010_00100_01010_10001
 
     def __init__(self, columns, rows):
         self.columns = columns
         self.rows = rows
-        print(self.rows)
-        print(self.columns)
+        min_col = columns[0]
+        max_col = columns[-1]
+        min_row = rows[0]
+        max_row = rows[-1]
 
-        update_thread = threading.Thread(target = self.update_display)
-        update_thread.start() #I love python :)
+        #update_thread = threading.Thread(target = self.update_display)
+        #update_thread.start() #I love python :)
     
     def plot(self, x, y):
         # turns on LED on at x and y cords
@@ -39,24 +41,23 @@ class Led:
         for col in self.rows:
             mcp[col].output(1)
         for row in self.columns:
-            mcp[row].output(1)
-
+            mcp[row].output(0)
 
     def update_display(self):
         """ To be called every iteration of the paced loop """
-        for row, states in enumerate(self.state_buffer):
-            self.clear()
-            input("cleared >")
-            for shift, col in enumerate(self.columns):
-                if ((states >> shift) & 1):
-                    print("1")
-                    mcp[col].output(0)
-                else:
-                    print("0")
-                    mcp[col].output(1)
-            mcp[self.rows[row]].output(0)
-            input(">")
+        for row_shift, row in enumerate(self.rows):
+            for col in self.columns:
+                mcp[col].output(0)
+
+            state = self.state_buffer >> (5 * row_shift) & 0b11111
+            for column_shift, col in enumerate(self.columns):
+                mcp[col].output((state >> column_shift) & 1)
+            mcp[row].output(0)
+            time.sleep(1/50)
+            mcp[row].output(1)
 
 
 # Columns: 8,9,13,14,15
-# Rows: 
+# Rows: 7,6,5,4,3
+# Need to set column high, row low, to turn on a LED
+# Column low, row high to keep it off
