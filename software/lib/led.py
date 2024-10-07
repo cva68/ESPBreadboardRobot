@@ -16,20 +16,11 @@ class Led:
         self.rows = rows
         self.state_buffer = 0
 
-<<<<<<< HEAD
         # _thread.start_new_thread(self.update_display(), ())
     
     def plot(self, x, y):
         mask = get_mask(x, y)
         self.state_buffer |= mask
-=======
-        #_thread.start_new_thread(update_display, ())
-    
-    def plot(self, x, y):
-        position = y*5 + x - 1
-        self.state_buffer = self.state_buffer | (1<<position)
-        print(bin(self.state_buffer))
->>>>>>> 07da5c288f4b05da564c0a3fa5d274bec54da032
 
     def unplot(self, x, y):
         mask = get_mask(x, y)
