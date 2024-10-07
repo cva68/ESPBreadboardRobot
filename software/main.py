@@ -5,23 +5,13 @@ import lib.led as ld
 i2c = SoftI2C(scl=Pin(8), sda=Pin(9))
 mcp = mcp23017.MCP23017(i2c, 0x20)
 
-mcp[7].output(1)
-mcp[6].output(1)
-mcp[2].output(1)
-mcp[1].output(1)
-mcp[3].output(1)
-mcp[8].output(0)
-mcp[9].output(0)
-mcp[10].output(0)
-mcp[11].output(0)
-mcp[12].output(0)
 
-
-"""
-led = ld.Led((7,6,5,4,3),(8,9,10,11,12))
+# Columns: 8,9,13,14,15
+# Rows: 7,6,5,4,3
+led = ld.Led((8,9,13,14,15),(7,6,5,4,3))
 while 1:
     led.update_display()
-"""
+
 """
 motor_driver = md.MotorDriver()
 # Turn the right motor on with 50% speed forward
