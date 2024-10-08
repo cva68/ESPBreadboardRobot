@@ -1,48 +1,33 @@
 from machine import Pin, PWM
-from time import sleep
-
-class Motors:
-    MOTOR1 = 1 #right
-    MOTOR2 = 2 #left
-
-class MotorDirection:
-    FORWARD = 1
-    REVERSE = 2
 
 class MotorDriver:
-    def __init__(self):
-        self.pwm_right_forward = PWM(Pin(2))  # PWM pin for the forward right motor
-        self.pwm_right_reverse = PWM(Pin(10))  # PWM pin for the reverse right motor
-        self.pwm_left_forward = PWM(Pin(6))   # PWM pin for the forward left motor
-        self.pwm_left_reverse = PWM(Pin(7))   # PWM pin for the reverse left motor
+    class MotorReferences:
+        """ Makecode uses MotorDriver.Motor, which is defined in the super __init__ using this as a template """
+        def __init__(self, left_pins: tuple, right_pins: tuple):
+            self.MOTOR1 = (PWM(Pin(left_pins[0])), PWM(Pin(left_pins[1])))
+            self.MOTOR2 = (PWM(Pin(right_pins[0])), PWM(Pin(right_pins[1])))
 
-        # Set initial duty cycle to 0
-        self.pwm_right.duty(0)
-        self.pwm_left.duty(0)
+    class MotorDirection:
+        """ Makecode uses MotorDriver.MotorDirection, which can be treated as an enum """
+        FORWARD = 0
+        REVERSE = 1
+
+    def __init__(self, left_pins: tuple, right_pins: tuple):
+        """ Initialise the PWM pins and define the motor references for MakeCode """
+        self.Motors = self.MotorReferences(left_pins, right_pins)
+        self.motor_off(self.Motors.MOTOR1)
+        self.motor_off(self.Motors.MOTOR2)
 
     def motor_off(self, motor):
-        # Turns the specified motor off by setting the PWM to 0
-        if motor == 1:
-            self.pwm_right_forward.duty(0)
-            self.pwm_right_reverse.duty(0)
-        elif motor == 2:
-            self.pwm_left_reverse.duty(0)
-            self.pwm_left_reverse.duty(0)
+        """ Turns the specified motor off by setting the PWM to 0 """
+        motor[0].duty(0)
+        motor[1].duty(0)
 
     def motor_on(self, motor, direction, speed):
-        speed = convert_speed(speed)
+        """ Turns on the specified motor at a set speed """
+        speed = self.convert_speed(speed)
+        motor[direction].duty(speed)
 
-        if motor == 1:
-            if direction == 1:
-                self.pwm_right_forward.duty(speed)
-            elif direction == 2:
-                self.pwm_right_reverse.duty(speed)
-        elif motor == 2:
-            if direction == 1:
-                self.pwm_left_forward.duty(speed)
-            elif direction == 2:
-                self.pwm_left_reverse.duty(speed)
-
-#takes a number between 1 to 100 and scales it be that percentage of 1023
-def convert_speed(speed):
-    return (speed/100)*1023
+    def convert_speed(self, speed):
+        """ Takes a speed from 0 to 100, and converts it to a PWM value between 0 and 1023 """
+        return int((speed/100)*1023)

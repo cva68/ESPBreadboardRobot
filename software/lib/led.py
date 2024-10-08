@@ -1,60 +1,52 @@
 from machine import Pin, SoftI2C
-import mcp23017
+from lib.mcp import MCPController
 import time
-#import _thread
+import _thread
 
-i2c = SoftI2C(scl=Pin(8), sda=Pin(9))
-mcp = mcp23017.MCP23017(i2c, 0x20)
-
-tmp_delay = 10 # need to make this
-
+# Public
 class Led:
-    #state_buffer = 0b10001_01010_00100_01010_10001
-    
-    def __init__(self, columns, rows):
+    """ Class to control the 5x5 LED matrix """
+    def __init__(self, mcp, columns, rows, refresh_rate=300):
+        self.mcp = mcp
         self.columns = columns
         self.rows = rows
         self.state_buffer = 0
+        self.refresh_rate = refresh_rate
 
-        #_thread.start_new_thread(update_display, ())
+        _thread.start_new_thread(self.update_display, ())
+
+    def index_from_coords(self, x, y):
+        """ Take an xy coordinate, and return the index of the LED on the matrix (internal) """
+        return 24 - (y * 5 + x)
     
     def plot(self, x, y):
-        position = y*5 + x - 1
-        self.state_buffer = self.state_buffer | (1<<position)
-        print(bin(self.state_buffer))
+        """ Plot an LED at position x, y on the display (public) """
+        self.state_buffer |= (1 << self.index_from_coords(x,y))
 
     def unplot(self, x, y):
-        # turns on LED on at x and y cords
-        pass
-
-    def update_buffer(self, buffer):
-        self.state_buffer = buffer
+        """ Un-plot an LED at position x, y on the display (public) """
+        self.state_buffer &= ~(1 << self.index_from_coords(x,y))
 
     def toggle(self, x, y):
-        # turns on LED on at x and y cords
-        pass
+        """ Toggle and LED at position x, y on the display (public) """
+        self.state_buffer ^= (1 << self.index_from_coords(x,y))
 
     def clear(self):
-        for col in self.rows:
-            mcp[col].output(1)
-        for row in self.columns:
-            mcp[row].output(0)
+        """ Clear the display (public) """
+        self.mcp.clear_bank_1()
+        self.mcp.set_bank_0()
 
     def update_display(self):
-        """ To be called every iteration of the paced loop """
-        for row_shift, row in enumerate(self.rows):
-            for col in self.columns:
-                mcp[col].output(0)
+        """ Update the display row-by-row (internal) """
+        while 1:
+            for row_shift, row in enumerate(self.rows):
+                self.clear()
+                state = self.state_buffer >> (5 * row_shift) & 0b11111
+                for column_shift, col in enumerate(self.columns):
+                    if (state >> column_shift) & 1:
+                        self.mcp.set_bank1_pin(col)
+                    else:
+                        self.mcp.clear_bank1_pin(col)
 
-            state = self.state_buffer >> (5 * row_shift) & 0b11111
-            for column_shift, col in enumerate(self.columns):
-                mcp[col].output((state >> column_shift) & 1)
-            mcp[row].output(0)
-            time.sleep(1/50)
-            mcp[row].output(1)
-
-
-# Columns: 8,9,13,14,15
-# Rows: 7,6,5,4,3
-# Need to set column high, row low, to turn on a LED
-# Column low, row high to keep it off
+                self.mcp.clear_bank0_pin(row)
+                time.sleep(1/300)

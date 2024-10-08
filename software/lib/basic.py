@@ -1,31 +1,33 @@
+from time import sleep
+
 class Basic:
-    def __init__(self, led):
+    """ Basic functions. Annoyingly, this is mostly LED functions, but to match MakeCode 
+        we have put them in here. """
+    
+    def __init__(self, led=0):
+        """ Reference the LED function for later use """
         self.led = led
     
-    def show_number(self, num):
-        #Display number on LED screen.
-        return 0
-    
-    def show_string(self, word):
-        #Display word on LED screen.
-        return 0
-
-    # takes a string of . and # the size of the LED matrix turn LED on for every # and off for every.
     def show_leds(self, plot):
-        plot = plot.strip()
+        """ Take a string of hashes and periods provided by MakeCode and convert it into a binary int,
+            then plot it on the display. """
         plot = plot.replace(" ", "")
+        plot = plot.replace("\n","")
+        print(plot)
         led_binary = 0
 
         for character in plot:
             led_binary += (character == '#')
-            led_binary << 1
-        
-        self.led.update_buffer(led_binary)
-    
+            led_binary = led_binary << 1
+
+        led_binary = led_binary >> 1
+        self.led.state_buffer = led_binary
+        print (bin(led_binary))
+
     def clear_screen(self):
+        """ Clear the LCD """
         self.led.clear()
-    
-    def show_arrow(self, direction):
-        #takes a direction and displays a arrow in that direction on LEDs
-        return 0
-    
+
+    def pause(self, duration):
+        """ Sleep a duration """
+        sleep(duration / 1000)
