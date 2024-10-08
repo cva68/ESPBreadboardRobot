@@ -48,5 +48,23 @@ class Led:
                     else:
                         self.mcp.clear_bank1_pin(col)
 
+<<<<<<< HEAD
                 self.mcp.clear_bank0_pin(row)
                 time.sleep(1/300)
+=======
+            state = self.state_buffer >> (5 * row_shift) & 0b11111
+            for column_shift, col in enumerate(self.columns):
+                mcp[col].output((state >> column_shift) & 1)
+            mcp[row].output(0)
+            time.sleep(1/50)
+            mcp[row].output(1)
+
+def get_mask(x, y):
+    position = y*5 + x
+    return 1 << position
+
+# Columns: 8,9,13,14,15
+# Rows: 7,6,5,4,3
+# Need to set column high, row low, to turn on a LED
+# Column low, row high to keep it off
+>>>>>>> 8cf481ad1d5d3a0511cc72c3f802439284da9c5c
