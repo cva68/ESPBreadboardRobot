@@ -1,10 +1,13 @@
 """
-MCP23017 Lightweight MicroPython Driver
-GNU GPL V3 (C) Connor Varney
+Lightweight MCP23017 driver, output only.
+Copyright 2024 C. Varney, A. Walker, K.J Jones 
+Free software under a MIT-0 License (see LICENSE.txt or https://github.com/aws/mit-0)
 """
 
 class MCPController:
+    """ MCP23017 Output-Only Driver """
     def __init__(self, i2c, address: int):
+        """ Store a reference to an i2c instance and the address of the MCP, and create local state buffers """
         self.i2c = i2c
         self.address = address
         self.bank_0_gpio = 0
@@ -15,7 +18,6 @@ class MCPController:
         """ Configure all banks as outputs"""
         self.i2c.writeto_mem(self.address, 0x00, b'\x00')
         self.i2c.writeto_mem(self.address, 0x01, b'\x00')
-        #i2c.writeto_mem(0x20, 0x01, b'\x00')
 
     # The below functions are seperate to avoid conditional logic, in an attempt to keep
     # things as fast as possible

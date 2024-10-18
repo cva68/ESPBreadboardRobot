@@ -1,3 +1,13 @@
+"""
+Paste student code at the bottom of this file and upload it to your prototype board!
+"""
+
+"""
+ESP32 Compatibility layer for Microsoft MakeCode, Part of ESPBreadboardRobot.
+Copyright 2024 C. Varney, A. Walker, K.J Jones 
+Free software under a MIT-0 License (see LICENSE.txt or https://github.com/aws/mit-0)
+"""
+
 from machine import SoftI2C, Pin
 from lib.mcp import MCPController
 from lib.led import Led
@@ -19,7 +29,6 @@ DISPLAY_ROW_PINS = (3,4,5,6,7)
 MCP_ADDRESS = 0x20
 MCP_SCL_PIN = 8
 MCP_SDA_PIN = 9
-
 
 ## Class references
 

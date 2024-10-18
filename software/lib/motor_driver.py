@@ -1,3 +1,10 @@
+"""
+ESP32 Compatibility layer for Kitronic Motor Driver functions in Microsoft MakeCode.
+Part of ESPBreadboardRobot.
+Copyright 2024 C. Varney, A. Walker, K.J Jones 
+Free software under a MIT-0 License (see LICENSE.txt or https://github.com/aws/mit-0)
+"""
+
 from machine import Pin, PWM
 
 class MotorDriver:
